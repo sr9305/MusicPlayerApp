@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MusicActivity">
+        tools:context=".MusicPlayerActivity">
 
         <TextView
             android:id="@+id/title"
@@ -19,6 +19,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/singer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
         <ImageView
             android:id="@+id/album_image"
             android:layout_width="300dp"
@@ -26,7 +36,17 @@
             android:layout_margin="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title" />
+            app:layout_constraintTop_toBottomOf="@+id/singer" />
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/album_image" />
 
         <TextView
             android:id="@+id/lyric"
@@ -34,7 +54,7 @@
             android:layout_height="30dp"
             android:layout_margin="30dp"
             android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/album_image" />
+            app:layout_constraintTop_toBottomOf="@+id/album" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
